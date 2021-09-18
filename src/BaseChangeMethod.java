@@ -5,11 +5,11 @@ public class BaseChangeMethod {
         Stack<String>finalNumber = new Stack<>();
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         while (number >= 1) {
-            int remainNum = number % base;
-            if (remainNum > 9){
-                char letter = alphabet.charAt(remainNum-10);
+            int remain = number % base;
+            if (remain > 9){
+                char letter = alphabet.charAt(remain-10);
                 finalNumber.add(Character.toString(letter));
-            }else finalNumber.add(Integer.toString(remainNum));
+            }else finalNumber.add(Integer.toString(remain));
             number /= base;
         }
         StringBuilder binaryNumber = new StringBuilder();
