@@ -13,9 +13,7 @@ public class BaseChangeMethod {
             number /= base;
         }
         StringBuilder binaryNumber = new StringBuilder();
-        while (!finalNumber.isEmpty()) {
-            binaryNumber.append(finalNumber.pop());
-        }
+        while (!finalNumber.isEmpty()) binaryNumber.append(finalNumber.pop());
         return binaryNumber.toString();
     }
 }
